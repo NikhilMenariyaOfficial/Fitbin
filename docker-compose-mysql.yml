@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 8094995780
+      MYSQL_DATABASE: casual.fitness
+      MYSQL_USER: casual.fitness
+      MYSQL_PASSWORD: 8094995780
